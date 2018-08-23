@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D45D03812125FF5A0059A911 /* TGLDateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D45D03802125FF5A0059A911 /* TGLDateUtils.m */; };
+		D4B985E7210960B100DAA9FF /* TGLTask.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B985E6210960B100DAA9FF /* TGLTask.m */; };
+		D4B985E8210960B100DAA9FF /* TGLTask.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B985E6210960B100DAA9FF /* TGLTask.m */; };
+		D4B985EB2109620200DAA9FF /* TGLBaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B985EA2109620200DAA9FF /* TGLBaseObject.m */; };
+		D4B985EC2109620200DAA9FF /* TGLBaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B985EA2109620200DAA9FF /* TGLBaseObject.m */; };
+		D4B985EF2109650B00DAA9FF /* TGLTimeEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B985EE2109650B00DAA9FF /* TGLTimeEntry.m */; };
+		D4B985F02109650B00DAA9FF /* TGLTimeEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B985EE2109650B00DAA9FF /* TGLTimeEntry.m */; };
+		D4B985F32109678C00DAA9FF /* TGLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B985F22109678C00DAA9FF /* TGLUser.m */; };
+		D4B985F42109678C00DAA9FF /* TGLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B985F22109678C00DAA9FF /* TGLUser.m */; };
+		D4B985F6210D59E700DAA9FF /* TogglApiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B985F5210D59E700DAA9FF /* TogglApiTests.m */; };
+		D4D95A7221080CD400F17FA4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D95A7121080CD400F17FA4 /* AppDelegate.m */; };
+		D4D95A7521080CD400F17FA4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D95A7421080CD400F17FA4 /* ViewController.m */; };
+		D4D95A7821080CD400F17FA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4D95A7621080CD400F17FA4 /* Main.storyboard */; };
+		D4D95A7A21080CD400F17FA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4D95A7921080CD400F17FA4 /* Assets.xcassets */; };
+		D4D95A7D21080CD400F17FA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4D95A7B21080CD400F17FA4 /* LaunchScreen.storyboard */; };
+		D4D95A8021080CD500F17FA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D95A7F21080CD500F17FA4 /* main.m */; };
+		D4D95A8A21080CD500F17FA4 /* TogglCompanionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D95A8921080CD500F17FA4 /* TogglCompanionTests.m */; };
+		D4D95A9521080CD500F17FA4 /* TogglCompanionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D95A9421080CD500F17FA4 /* TogglCompanionUITests.m */; };
+		D4D95AA621080D5100F17FA4 /* TogglApi.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D95AA521080D5100F17FA4 /* TogglApi.m */; };
+		D4D95AA721080D5100F17FA4 /* TogglApi.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D95AA521080D5100F17FA4 /* TogglApi.m */; };
+		D4D95AA821080D5100F17FA4 /* TogglApi.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D95AA521080D5100F17FA4 /* TogglApi.m */; };
+		D4D95AAB21090C4B00F17FA4 /* TGLBlogDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D95AAA21090C4B00F17FA4 /* TGLBlogDescriptor.m */; };
+		D4D95AAC21090C4B00F17FA4 /* TGLBlogDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D95AAA21090C4B00F17FA4 /* TGLBlogDescriptor.m */; };
+		D4D95AAF210911CC00F17FA4 /* TGLCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D95AAE210911CC00F17FA4 /* TGLCredentials.m */; };
+		D4D95AB0210911CC00F17FA4 /* TGLCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D95AAE210911CC00F17FA4 /* TGLCredentials.m */; };
+		D4D95AB3210912A700F17FA4 /* TGLProject.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D95AB2210912A700F17FA4 /* TGLProject.m */; };
+		D4D95AB4210912A700F17FA4 /* TGLProject.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D95AB2210912A700F17FA4 /* TGLProject.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4D95A8621080CD500F17FA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4D95A6521080CD400F17FA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4D95A6C21080CD400F17FA4;
+			remoteInfo = TogglCompanion;
+		};
+		D4D95A9121080CD500F17FA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4D95A6521080CD400F17FA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4D95A6C21080CD400F17FA4;
+			remoteInfo = TogglCompanion;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D45D037F2125FF5A0059A911 /* TGLDateUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGLDateUtils.h; sourceTree = "<group>"; };
+		D45D03802125FF5A0059A911 /* TGLDateUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGLDateUtils.m; sourceTree = "<group>"; };
+		D4B985E5210960B100DAA9FF /* TGLTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGLTask.h; sourceTree = "<group>"; };
+		D4B985E6210960B100DAA9FF /* TGLTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGLTask.m; sourceTree = "<group>"; };
+		D4B985E92109620200DAA9FF /* TGLBaseObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGLBaseObject.h; sourceTree = "<group>"; };
+		D4B985EA2109620200DAA9FF /* TGLBaseObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGLBaseObject.m; sourceTree = "<group>"; };
+		D4B985ED2109650B00DAA9FF /* TGLTimeEntry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGLTimeEntry.h; sourceTree = "<group>"; };
+		D4B985EE2109650B00DAA9FF /* TGLTimeEntry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGLTimeEntry.m; sourceTree = "<group>"; };
+		D4B985F12109678C00DAA9FF /* TGLUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGLUser.h; sourceTree = "<group>"; };
+		D4B985F22109678C00DAA9FF /* TGLUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGLUser.m; sourceTree = "<group>"; };
+		D4B985F5210D59E700DAA9FF /* TogglApiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TogglApiTests.m; sourceTree = "<group>"; };
+		D4D95A6D21080CD400F17FA4 /* TogglCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TogglCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4D95A7021080CD400F17FA4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D4D95A7121080CD400F17FA4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D4D95A7321080CD400F17FA4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D4D95A7421080CD400F17FA4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D4D95A7721080CD400F17FA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D4D95A7921080CD400F17FA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D4D95A7C21080CD400F17FA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D4D95A7E21080CD400F17FA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4D95A7F21080CD500F17FA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D4D95A8521080CD500F17FA4 /* TogglCompanionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TogglCompanionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4D95A8921080CD500F17FA4 /* TogglCompanionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TogglCompanionTests.m; sourceTree = "<group>"; };
+		D4D95A8B21080CD500F17FA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4D95A9021080CD500F17FA4 /* TogglCompanionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TogglCompanionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4D95A9421080CD500F17FA4 /* TogglCompanionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TogglCompanionUITests.m; sourceTree = "<group>"; };
+		D4D95A9621080CD500F17FA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4D95AA421080D5100F17FA4 /* TogglApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TogglApi.h; sourceTree = "<group>"; };
+		D4D95AA521080D5100F17FA4 /* TogglApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TogglApi.m; sourceTree = "<group>"; };
+		D4D95AA921090C4B00F17FA4 /* TGLBlogDescriptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGLBlogDescriptor.h; sourceTree = "<group>"; };
+		D4D95AAA21090C4B00F17FA4 /* TGLBlogDescriptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGLBlogDescriptor.m; sourceTree = "<group>"; };
+		D4D95AAD210911CC00F17FA4 /* TGLCredentials.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGLCredentials.h; sourceTree = "<group>"; };
+		D4D95AAE210911CC00F17FA4 /* TGLCredentials.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGLCredentials.m; sourceTree = "<group>"; };
+		D4D95AB1210912A700F17FA4 /* TGLProject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGLProject.h; sourceTree = "<group>"; };
+		D4D95AB2210912A700F17FA4 /* TGLProject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGLProject.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4D95A6A21080CD400F17FA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4D95A8221080CD500F17FA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4D95A8D21080CD500F17FA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D45D037E2125FF190059A911 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D45D037F2125FF5A0059A911 /* TGLDateUtils.h */,
+				D45D03802125FF5A0059A911 /* TGLDateUtils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D4D95A6421080CD400F17FA4 = {
+			isa = PBXGroup;
+			children = (
+				D4D95A6F21080CD400F17FA4 /* TogglCompanion */,
+				D4D95A8821080CD500F17FA4 /* TogglCompanionTests */,
+				D4D95A9321080CD500F17FA4 /* TogglCompanionUITests */,
+				D4D95A6E21080CD400F17FA4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D4D95A6E21080CD400F17FA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4D95A6D21080CD400F17FA4 /* TogglCompanion.app */,
+				D4D95A8521080CD500F17FA4 /* TogglCompanionTests.xctest */,
+				D4D95A9021080CD500F17FA4 /* TogglCompanionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4D95A6F21080CD400F17FA4 /* TogglCompanion */ = {
+			isa = PBXGroup;
+			children = (
+				D45D037E2125FF190059A911 /* Utils */,
+				D4D95AA321080CFB00F17FA4 /* Network */,
+				D4D95AA221080CE400F17FA4 /* DomainObjects */,
+				D4D95A7021080CD400F17FA4 /* AppDelegate.h */,
+				D4D95A7121080CD400F17FA4 /* AppDelegate.m */,
+				D4D95A7321080CD400F17FA4 /* ViewController.h */,
+				D4D95A7421080CD400F17FA4 /* ViewController.m */,
+				D4D95A7621080CD400F17FA4 /* Main.storyboard */,
+				D4D95A7921080CD400F17FA4 /* Assets.xcassets */,
+				D4D95A7B21080CD400F17FA4 /* LaunchScreen.storyboard */,
+				D4D95A7E21080CD400F17FA4 /* Info.plist */,
+				D4D95A7F21080CD500F17FA4 /* main.m */,
+			);
+			path = TogglCompanion;
+			sourceTree = "<group>";
+		};
+		D4D95A8821080CD500F17FA4 /* TogglCompanionTests */ = {
+			isa = PBXGroup;
+			children = (
+				D4D95A8921080CD500F17FA4 /* TogglCompanionTests.m */,
+				D4D95A8B21080CD500F17FA4 /* Info.plist */,
+				D4B985F5210D59E700DAA9FF /* TogglApiTests.m */,
+			);
+			path = TogglCompanionTests;
+			sourceTree = "<group>";
+		};
+		D4D95A9321080CD500F17FA4 /* TogglCompanionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D4D95A9421080CD500F17FA4 /* TogglCompanionUITests.m */,
+				D4D95A9621080CD500F17FA4 /* Info.plist */,
+			);
+			path = TogglCompanionUITests;
+			sourceTree = "<group>";
+		};
+		D4D95AA221080CE400F17FA4 /* DomainObjects */ = {
+			isa = PBXGroup;
+			children = (
+				D4D95AA921090C4B00F17FA4 /* TGLBlogDescriptor.h */,
+				D4D95AAA21090C4B00F17FA4 /* TGLBlogDescriptor.m */,
+				D4D95AAD210911CC00F17FA4 /* TGLCredentials.h */,
+				D4D95AAE210911CC00F17FA4 /* TGLCredentials.m */,
+				D4D95AB1210912A700F17FA4 /* TGLProject.h */,
+				D4D95AB2210912A700F17FA4 /* TGLProject.m */,
+				D4B985E5210960B100DAA9FF /* TGLTask.h */,
+				D4B985E6210960B100DAA9FF /* TGLTask.m */,
+				D4B985E92109620200DAA9FF /* TGLBaseObject.h */,
+				D4B985EA2109620200DAA9FF /* TGLBaseObject.m */,
+				D4B985ED2109650B00DAA9FF /* TGLTimeEntry.h */,
+				D4B985EE2109650B00DAA9FF /* TGLTimeEntry.m */,
+				D4B985F12109678C00DAA9FF /* TGLUser.h */,
+				D4B985F22109678C00DAA9FF /* TGLUser.m */,
+			);
+			path = DomainObjects;
+			sourceTree = "<group>";
+		};
+		D4D95AA321080CFB00F17FA4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D4D95AA421080D5100F17FA4 /* TogglApi.h */,
+				D4D95AA521080D5100F17FA4 /* TogglApi.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D4D95A6C21080CD400F17FA4 /* TogglCompanion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4D95A9921080CD500F17FA4 /* Build configuration list for PBXNativeTarget "TogglCompanion" */;
+			buildPhases = (
+				D4D95A6921080CD400F17FA4 /* Sources */,
+				D4D95A6A21080CD400F17FA4 /* Frameworks */,
+				D4D95A6B21080CD400F17FA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TogglCompanion;
+			productName = TogglCompanion;
+			productReference = D4D95A6D21080CD400F17FA4 /* TogglCompanion.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D4D95A8421080CD500F17FA4 /* TogglCompanionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4D95A9C21080CD500F17FA4 /* Build configuration list for PBXNativeTarget "TogglCompanionTests" */;
+			buildPhases = (
+				D4D95A8121080CD500F17FA4 /* Sources */,
+				D4D95A8221080CD500F17FA4 /* Frameworks */,
+				D4D95A8321080CD500F17FA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4D95A8721080CD500F17FA4 /* PBXTargetDependency */,
+			);
+			name = TogglCompanionTests;
+			productName = TogglCompanionTests;
+			productReference = D4D95A8521080CD500F17FA4 /* TogglCompanionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D4D95A8F21080CD500F17FA4 /* TogglCompanionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4D95A9F21080CD500F17FA4 /* Build configuration list for PBXNativeTarget "TogglCompanionUITests" */;
+			buildPhases = (
+				D4D95A8C21080CD500F17FA4 /* Sources */,
+				D4D95A8D21080CD500F17FA4 /* Frameworks */,
+				D4D95A8E21080CD500F17FA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4D95A9221080CD500F17FA4 /* PBXTargetDependency */,
+			);
+			name = TogglCompanionUITests;
+			productName = TogglCompanionUITests;
+			productReference = D4D95A9021080CD500F17FA4 /* TogglCompanionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4D95A6521080CD400F17FA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = JarvisDesigns;
+				TargetAttributes = {
+					D4D95A6C21080CD400F17FA4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					D4D95A8421080CD500F17FA4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D4D95A6C21080CD400F17FA4;
+					};
+					D4D95A8F21080CD500F17FA4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D4D95A6C21080CD400F17FA4;
+					};
+				};
+			};
+			buildConfigurationList = D4D95A6821080CD400F17FA4 /* Build configuration list for PBXProject "TogglCompanion" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D4D95A6421080CD400F17FA4;
+			productRefGroup = D4D95A6E21080CD400F17FA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4D95A6C21080CD400F17FA4 /* TogglCompanion */,
+				D4D95A8421080CD500F17FA4 /* TogglCompanionTests */,
+				D4D95A8F21080CD500F17FA4 /* TogglCompanionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D4D95A6B21080CD400F17FA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4D95A7D21080CD400F17FA4 /* LaunchScreen.storyboard in Resources */,
+				D4D95A7A21080CD400F17FA4 /* Assets.xcassets in Resources */,
+				D4D95A7821080CD400F17FA4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4D95A8321080CD500F17FA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4D95A8E21080CD500F17FA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4D95A6921080CD400F17FA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4D95AAB21090C4B00F17FA4 /* TGLBlogDescriptor.m in Sources */,
+				D45D03812125FF5A0059A911 /* TGLDateUtils.m in Sources */,
+				D4B985F32109678C00DAA9FF /* TGLUser.m in Sources */,
+				D4B985EF2109650B00DAA9FF /* TGLTimeEntry.m in Sources */,
+				D4D95AA621080D5100F17FA4 /* TogglApi.m in Sources */,
+				D4D95AAF210911CC00F17FA4 /* TGLCredentials.m in Sources */,
+				D4D95A7521080CD400F17FA4 /* ViewController.m in Sources */,
+				D4D95A8021080CD500F17FA4 /* main.m in Sources */,
+				D4D95AB3210912A700F17FA4 /* TGLProject.m in Sources */,
+				D4B985EB2109620200DAA9FF /* TGLBaseObject.m in Sources */,
+				D4B985E7210960B100DAA9FF /* TGLTask.m in Sources */,
+				D4D95A7221080CD400F17FA4 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4D95A8121080CD500F17FA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4D95AB0210911CC00F17FA4 /* TGLCredentials.m in Sources */,
+				D4B985F02109650B00DAA9FF /* TGLTimeEntry.m in Sources */,
+				D4B985F6210D59E700DAA9FF /* TogglApiTests.m in Sources */,
+				D4D95AB4210912A700F17FA4 /* TGLProject.m in Sources */,
+				D4D95AA721080D5100F17FA4 /* TogglApi.m in Sources */,
+				D4B985F42109678C00DAA9FF /* TGLUser.m in Sources */,
+				D4B985EC2109620200DAA9FF /* TGLBaseObject.m in Sources */,
+				D4D95AAC21090C4B00F17FA4 /* TGLBlogDescriptor.m in Sources */,
+				D4B985E8210960B100DAA9FF /* TGLTask.m in Sources */,
+				D4D95A8A21080CD500F17FA4 /* TogglCompanionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4D95A8C21080CD500F17FA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4D95AA821080D5100F17FA4 /* TogglApi.m in Sources */,
+				D4D95A9521080CD500F17FA4 /* TogglCompanionUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4D95A8721080CD500F17FA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4D95A6C21080CD400F17FA4 /* TogglCompanion */;
+			targetProxy = D4D95A8621080CD500F17FA4 /* PBXContainerItemProxy */;
+		};
+		D4D95A9221080CD500F17FA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4D95A6C21080CD400F17FA4 /* TogglCompanion */;
+			targetProxy = D4D95A9121080CD500F17FA4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D4D95A7621080CD400F17FA4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4D95A7721080CD400F17FA4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D4D95A7B21080CD400F17FA4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4D95A7C21080CD400F17FA4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D4D95A9721080CD500F17FA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D4D95A9821080CD500F17FA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D4D95A9A21080CD500F17FA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TogglCompanion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jgreene.TogglCompanion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D4D95A9B21080CD500F17FA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TogglCompanion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jgreene.TogglCompanion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D4D95A9D21080CD500F17FA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TogglCompanionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jgreene.TogglCompanionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TogglCompanion.app/TogglCompanion";
+			};
+			name = Debug;
+		};
+		D4D95A9E21080CD500F17FA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TogglCompanionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jgreene.TogglCompanionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TogglCompanion.app/TogglCompanion";
+			};
+			name = Release;
+		};
+		D4D95AA021080CD500F17FA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TogglCompanionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jgreene.TogglCompanionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TogglCompanion;
+			};
+			name = Debug;
+		};
+		D4D95AA121080CD500F17FA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TogglCompanionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jgreene.TogglCompanionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TogglCompanion;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4D95A6821080CD400F17FA4 /* Build configuration list for PBXProject "TogglCompanion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4D95A9721080CD500F17FA4 /* Debug */,
+				D4D95A9821080CD500F17FA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4D95A9921080CD500F17FA4 /* Build configuration list for PBXNativeTarget "TogglCompanion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4D95A9A21080CD500F17FA4 /* Debug */,
+				D4D95A9B21080CD500F17FA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4D95A9C21080CD500F17FA4 /* Build configuration list for PBXNativeTarget "TogglCompanionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4D95A9D21080CD500F17FA4 /* Debug */,
+				D4D95A9E21080CD500F17FA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4D95A9F21080CD500F17FA4 /* Build configuration list for PBXNativeTarget "TogglCompanionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4D95AA021080CD500F17FA4 /* Debug */,
+				D4D95AA121080CD500F17FA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D4D95A6521080CD400F17FA4 /* Project object */;
+}

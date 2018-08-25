@@ -254,4 +254,35 @@ BOOL sessionInitialized = NO;
      }];
 }
 
+-(void)getTasks:(NSInteger)projectId withCompletion:(void (^)(NSArray<TGLTask *> *, NSError *))completion
+{
+    NSString* url = [NSString stringWithFormat:@"%@%@%ld%@",BASE_URL,@"/projects/",(long)projectId,@"/tasks"];
+    [self performRequest:url withHttpMethod:Get withParams:nil withData:nil withCompletion:^(NSData *data, NSURLResponse *response, NSError *error)
+    {
+        NSMutableArray<TGLTask*>* results = [[NSMutableArray alloc] init];
+        if (response != nil)
+        {
+            if([response isKindOfClass:[NSHTTPURLResponse class]])
+            {
+                NSHTTPURLResponse* httpResponse = (NSHTTPURLResponse *)response;
+                NSLog(@"Received response code %ld", (long)httpResponse.statusCode);
+                NSLog(@"Body:\n%@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+            }
+            NSArray<NSDictionary*> *tasks = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&error];
+            if(tasks != nil)
+            {
+                for(NSDictionary* entryJson in tasks)
+                {
+                    [results addObject:[[TGLTask alloc] initWithDictionary:entryJson]];
+                }
+            }
+        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            completion(results,error);
+        });
+        
+    }];
+    
+}
+
 @end

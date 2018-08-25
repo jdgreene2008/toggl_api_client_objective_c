@@ -11,6 +11,7 @@
 #import "TGLUser.h"
 #import "TGLTimeEntry.h"
 #import "TGLDateUtils.h"
+#import "TGLTask.h"
 
 typedef NS_ENUM (NSInteger, HttpMethod)
 {
@@ -38,5 +39,6 @@ typedef NS_ENUM (NSInteger, HttpMethod)
 
 -(void)updateTimeEntry:(TGLTimeEntry *)update withCompletion:(void (^)(TGLTimeEntry *, NSError *))completion;
 
+-(void)getTasks:(NSInteger)projectId withCompletion:(void (^)(NSArray<TGLTask*>*,NSError*))completion;
 
 @end
